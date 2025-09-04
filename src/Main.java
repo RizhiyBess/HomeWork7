@@ -60,18 +60,17 @@ public class Main {
         int firstFriday = 1;
         int day = firstFriday;
         for (; day <= 31; day = day + 7) {
-            System.out.println("Сегодня пятница " + day + "-е число. Необходимо подготовить");
+            System.out.println("Сегодня пятница " + day + "-е число. Необходимо подготовить отчет.");
         }
 
         System.out.println("Задание 8");
-        int yearOfTheComet = 0;
+        int yearComet = -79;
         int currentYear = 2025;
-        while (yearOfTheComet <= currentYear) {
-            yearOfTheComet = yearOfTheComet + 79;
-            if (yearOfTheComet >= (currentYear - 200) && yearOfTheComet <= (currentYear + 100)) {
-                System.out.println(yearOfTheComet + " год кометы");
+        while (yearComet <= currentYear) {
+            yearComet = yearComet + 79;
+            if (yearComet >= (currentYear - 200) && yearComet <= (currentYear + 100)) {
+                System.out.println(yearComet + " год кометы");
             }
         }
-
     }
 }
